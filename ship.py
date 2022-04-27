@@ -1,5 +1,7 @@
 import pygame
 
+from game_stats import GameStats
+
 
 class Ship:
     """A class to manage the ship."""
@@ -10,6 +12,7 @@ class Ship:
         self.screen = ai_game.screen
         self.screen_rect = ai_game.screen.get_rect()
         self.settings = ai_game.settings
+        self.stats = ai_game.stats
 
         # Load the ship image and get its rect.
         self.image = pygame.image.load('images/ship.bmp')
@@ -45,3 +48,7 @@ class Ship:
         """Center the ship on the screen."""
         self.rect.midbottom = self.screen_rect.midbottom
         self.x = float(self.rect.x)
+
+    def upgrade(self):
+        if self.stats.waves_cleared % self.settings.waves_required == 0:
+            self.settings.bullets_allowed += 1
