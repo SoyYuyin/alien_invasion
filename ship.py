@@ -1,13 +1,12 @@
 import pygame
+from pygame.sprite import Sprite
 
-from game_stats import GameStats
-
-
-class Ship:
+class Ship(Sprite):
     """A class to manage the ship."""
 
     def __init__(self, ai_game):
         """Initialize the ship and set its starting position."""
+        super().__init__()
         # References from AlienInvasion to later position ship relative to them
         self.screen = ai_game.screen
         self.screen_rect = ai_game.screen.get_rect()
