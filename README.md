@@ -10,3 +10,9 @@ sophisticated games."
 
 This project is developed using Object Oriented Programming. Classes share
 attributes and methods across different modules to keep things organized.
+
+## To play press "p" or click on the play button
+![Start menu](images/start-menu.png)
+
+## Gameplay screenshot
+![Shooting aliens](images/gameplay.png)
