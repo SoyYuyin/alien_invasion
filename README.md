@@ -1,6 +1,6 @@
 # Alien Invasion
 
-This is game from the book Python Crash Course by Eric Matthes, where you
+This game is from the book Python Crash Course by Eric Matthes, where you
 control a spaceship that moves left and right at the bottom of the screen and
 shoot aliens that invade the sky.
 
